@@ -9,13 +9,44 @@ Na potrzeby tego projektu zostały użyte dane dotyczące pożyczek udzielonych 
 Poniżej zaprezentowane są poszczególne etapy analizy, których wykonanie jest konieczne do zaliczenia projektu oraz ich punktacja:
 
 * Obróbka danych (Data Processing)
-* EDA + Dodatkowo odpowiedz na poniższe pytania:
+Zmienione kolumny:
+    * term
+    * grade
+    * emp_length
+    * home_ownership
+    * verification_status
+    * loan_status
+    * int_rate
+
+Zastosowałam funkcje map i apply lambda.
+
+* EDA + Dodatkowo odpowiedz na poniższe pytania
+Odpowiadając na poniższe pytania wykorzystałam działania matematyczne oraz funkcje gropuby, count, apply, pętle for: 
     * W jaki sposób wynik FICO wiąże się z prawdopodobieństwem spłacenia pożyczki przez pożyczkobiorcę?
     * W jaki sposób wiek kredytowy wiąże się z prawdopodobieństwem niewykonania zobowiązania i czy ryzyko to jest niezależne lub związane z wynikiem FICO
     * W jaki sposób status kredytu hipotecznego na dom wiąże się z prawdopodobieństwem niewypłacalności?
     * W jaki sposób roczny dochód wiąże się z prawdopodobieństwem niewykonania zobowiązania?
     * W jaki sposób historia zatrudnienia wiąże się z prawdopodobieństwem niewykonania zobowiązania?
-    * Jak wielkość żądanej pożyczki jest powiązana z prawdopodobieństwem niewykonania zobowiązania?**
+    * Jak wielkość żądanej pożyczki jest powiązana z prawdopodobieństwem niewykonania zobowiązania?
+
+Do Analizy wykorzystałam pandas_profiling. Wygenerowanyplik html jest dostępny wśród plików w folderze.
+
 * Feature Engineering
-* Modelowanie
+Kluczowym wskaźnikiem spłaty pożyczki był wynik FICO. W tym kroku zrobiłam segmenty z kolumny last_fico_range_high, za pomocą funkcji appy w oparciu o dane segmenty FICO.
+Usuwanie outliersów oraz kolumny indeskującej.
+Wykonanie standaryzacji
+PCA
+
+
 * Klasteryzacja
+metoda łokcia - elbow-curve
+DBSCAN
+K-means
+
+* Modelowanie 
+Decision Tree
+Random Forest
+Support Vector Machine (SVM)
+REgresja logistyczna
+
+Modele przy użyciu skompresowanych danych PCA
