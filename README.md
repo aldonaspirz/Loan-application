@@ -6,7 +6,7 @@ Na potrzeby tego projektu zostały użyte dane dotyczące pożyczek udzielonych 
 
 **Celem projektu jest zbudowanie modelu klasyfikacyjnego, który na podstawie podanych danych będzie przewidywał z określoną dokładnością, czy potencjalny pożyczkobiorca spłaci swój dług z tytułu zaciągniętej pozyczki.**
 
-Poniżej zaprezentowane są poszczególne etapy analizy, których wykonanie jest konieczne do zaliczenia projektu oraz ich punktacja:
+Poniżej zaprezentowane są poszczególne etapy analizy, których wykonanie jest konieczne do zaliczenia projektu:
 
 * Obróbka danych (Data Processing)
 Zmienione kolumny:
